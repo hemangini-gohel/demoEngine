@@ -42,8 +42,8 @@ bin/rails generate model Comment article_id:integer text:text
 
 add all required partial(see in repo for more reference)
 
-bin/rails db:migrate
+run bin/rails db:migrate
 
-bin/rails server
+run bin/rails server
 
 App running on http://localhost:3000/articles
