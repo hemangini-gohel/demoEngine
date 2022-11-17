@@ -8,7 +8,7 @@ How to use my plugin.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "demo_engine"
+gem 'demo_engine', git:'https://github.com/hemangini-g-simformsolutions/demoEngine.git', branch:'main' 
 ```
 
 And then execute:
