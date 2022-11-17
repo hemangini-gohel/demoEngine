@@ -1,5 +1,5 @@
 # DemoEngine
-Short description and motivation.
+Demo application to learn how rails engine works
 
 ## Usage
 How to use my plugin.
@@ -13,7 +13,7 @@ gem 'demo_engine', git:'https://github.com/hemangini-g-simformsolutions/demoEngi
 
 And then execute:
 ```bash
-$ bundle
+$ bundle install
 ```
 
 Or install it yourself as:
@@ -26,3 +26,24 @@ Contribution directions go here.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## STEPS (followed to create demo engine)
+rails plugin new demoEngine --mountable
+
+add gem puma to gem file
+
+add file config.ru at root level(see in repo for more reference) 
+
+cd test/dummy
+
+bin/rails generate scaffold article title:string text:text
+
+bin/rails generate model Comment article_id:integer text:text
+
+add all required partial(see in repo for more reference)
+
+bin/rails db:migrate
+
+bin/rails server
+
+App running on http://localhost:3000/articles
